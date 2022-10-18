@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Link from "next/link"
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -14,16 +14,14 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          안녕하세요 <a href="https://nextjs.org">어서오세요!</a>
+          안녕하세요 초이님 <a href="https://nextjs.org">어서오세요!</a>
         </h1>
-        <Link href ="about" > about </Link> 
+        <Link href="about"> about </Link>
 
         <p className={styles.description}>
-          Get started by editing{' '}
+          Get started by editing{" "}
           <code className={styles.code}>pages/index.js</code>
         </p>
-
-        
       </main>
 
       <footer className={styles.footer}>
@@ -32,12 +30,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
-  )
+  );
 }
