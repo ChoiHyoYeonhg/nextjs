@@ -3,11 +3,12 @@ import React from "react";
 
 export default function User() {
   const router = useRouter();
-  console.log(router.query);
   const { username } = router.query;
+  console.log(router.query);
   return (
     <div>
-      <h1> User Datail Page - {username} </h1>
+      <h1>User Detail page - {username}</h1>
+      <p>Dynamic routing</p>
     </div>
   );
 }
