@@ -1,17 +1,16 @@
-import { setConfig } from 'next/config'
-import { useRouter } from 'next/router'
-import React from 'react'
+import { useRouter } from "next/router";
+import React from "react";
 
 export default function docs() {
-    const router = useRouter()
-    const { params = []} = router.query
-    console.log (params)
+  const router = useRouter();
+  const { params = [] } = router.query;
+  console.log(params);
   return (
     <div>
-        <h1> Document service </h1>
-        {params.map((params)=> (
-            <p key = {params}>{params} </p>
-        ))}
+      <h1> Document service </h1>
+      {params.map((params) => (
+        <p key={params}>{params} </p>
+      ))}
     </div>
-  )
+  );
 }
